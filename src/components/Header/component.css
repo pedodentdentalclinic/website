@@ -1,0 +1,22 @@
+header {
+  width: 100vw;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-inline: 4rem;
+  padding-block: 0.5rem;
+
+  box-shadow: var(--shadow-1);
+
+  & img {
+    width: 5rem;
+  }
+
+  & nav {
+    display: flex;
+    gap: var(--gap-2);
+  }
+}
