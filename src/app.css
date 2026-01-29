@@ -182,8 +182,24 @@ h2 {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+
+  max-height: 3rem;
+
+  padding: var(--padding-1);
+
   background-color: var(--clr-secondary-1);
   color: white;
-  padding: var(--padding-1);
+
   border-radius: var(--radius-1);
+  border: solid var(--clr-secondary-1) 1px;
+
+  transition: var(--transition-2);
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--clr-secondary-1);
+  transition: var(--transition-2);
 }

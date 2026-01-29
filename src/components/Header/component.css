@@ -12,11 +12,20 @@ header {
   box-shadow: var(--shadow-1);
 
   & img {
-    width: 5rem;
+    width: 4rem;
   }
 
   & nav {
     display: flex;
     gap: var(--gap-2);
+
+    & a {
+      transition: var(--transition-2);
+    }
+
+    & a:hover {
+      color: var(--clr-secondary-1);
+      transition: var(--transition-2);
+    }
   }
 }
