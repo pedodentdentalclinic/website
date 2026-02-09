@@ -1,13 +1,20 @@
+:root {
+  --header-height: 5rem;
+}
+
 header {
   width: 100vw;
+  height: var(--header-height);
+
   background-color: white;
+  position: fixed;
+  z-index: 9999;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding-inline: 4rem;
-  padding-block: 0.5rem;
 
   box-shadow: var(--shadow-1);
 
@@ -28,4 +35,8 @@ header {
       transition: var(--transition-2);
     }
   }
+}
+
+.header-separator {
+  height: var(--header-height);
 }
