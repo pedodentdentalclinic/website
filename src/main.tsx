@@ -7,12 +7,14 @@ import Header from "./components/Header/component";
 import Footer from "./components/Footer/component";
 
 import Index from "./pages/Index/page";
+import NotFound from "./pages/NotFound/page";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Header />
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Index />} />
       </Routes>
       <Footer />
