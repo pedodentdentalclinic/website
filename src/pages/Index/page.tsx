@@ -105,6 +105,62 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <div className="index__testimonials">
+        <div className="testimonial">
+          <div className="content">
+            <i className="nf nf-md-format_quote_open"></i>
+            <p>
+              I had an excellent experience at Pedodent Dental Clinic, the staff
+              were warm and welcoming, which made me feel comfortable. The
+              clinic was neat and I did not wait long before being attended to.
+              I highly recommend them for anyone looking for professional and
+              caring dental services.
+            </p>
+            <p>— Juliana John</p>
+          </div>
+          <div>
+            <h2>
+              Kind words from <b>our patients</b>
+            </h2>
+          </div>
+        </div>
+        <div className="testimonial">
+          <div>
+            <h2>
+              We pride ourselves on our <b> customer service </b>
+            </h2>
+          </div>
+          <div className="content">
+            <i className="nf nf-md-format_quote_open"></i>
+            <p>
+              My first visit at the clinic was great, and my RCT treatment went
+              smoothly. The doctors were very patient and friendly. I am so
+              happy and I didn’t regret coming to Pedodent Dental Clinic for my
+              treatment. They’re simply the best thank you.
+            </p>
+            <p>— Cynthia Nelly</p>
+          </div>
+        </div>
+        <div className="testimonial">
+          <div className="content">
+            <i className="nf nf-md-format_quote_open"></i>
+            <p>
+              Pedodent Dental Clinic is superb and professional in any
+              procedure. I was amazed how the lead consult treated my son's
+              fracture tooth to almost original. I encourage you to try Pedodent
+              Dental Clinic and it is only trial that you will be convince.
+              Thanks and God bless you sir. I am impressed by your professional
+              experience.
+            </p>
+            <p>— Jack Ibaraboka</p>
+          </div>
+          <div>
+            <h2>
+              Your <b>smiles</b> are safe with us
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

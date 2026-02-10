@@ -58,7 +58,7 @@
 
     & h2 {
       font-weight: 500;
-      font-size: var(--font-xl);
+      font-size: var(--font-xxl);
     }
   }
 
@@ -99,6 +99,52 @@
         & .learn-more:hover {
           border-bottom: solid 1px white;
         }
+      }
+    }
+  }
+}
+
+.index__testimonials {
+  display: flex;
+  flex-direction: column;
+
+  & .testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    & .content {
+      background-color: var(--clr-primary-2);
+      color: white;
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--gap-2);
+
+      padding: var(--padding-4);
+      height: 30rem;
+
+      & h2 {
+        font-weight: normal;
+        font-size: var(--font-xxl);
+        text-align: center;
+      }
+
+      & p {
+        font-size: var(--font-md);
+      }
+
+      & b {
+        text-decoration: underline;
+      }
+
+      & .nf {
+        font-size: var(--font-xxl);
       }
     }
   }
