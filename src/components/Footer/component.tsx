@@ -43,7 +43,6 @@ export default function Footer() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/about-us">About Us</Link>
-          <Link to="/services">Services</Link>
           <Link to="/contact-us">Contact us</Link>
         </nav>
       </div>
