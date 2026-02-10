@@ -149,3 +149,35 @@
     }
   }
 }
+
+.index__call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5);
+
+  & .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-2);
+
+    padding: var(--padding-5);
+
+    border-radius: var(--radius-2);
+
+    background: linear-gradient(
+      105.6deg,
+      #88B1DC -45.34%,
+      #fef9e2 51.56%,
+      #b7e2f2 87.94%,
+      #fef5e6 105.06%
+    );
+    & h2 {
+      font-weight: 500;
+      font-size: var(--font-xxxl);
+      text-align: center;
+    }
+  }
+}

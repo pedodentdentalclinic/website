@@ -4,6 +4,18 @@ import "./page.css";
 
 import services from "./assets/services.jpg";
 
+function AppointmentLink() {
+  return (
+    <a
+      href="https://wa.me/+23408055450000?text=Hello, my name is [your name], I Would like to schedule a dental appointment"
+      target="_blank"
+      className="btn"
+    >
+      Schedule an Appointment
+    </a>
+  );
+}
+
 export default function Index() {
   return (
     <div className="index">
@@ -17,13 +29,7 @@ export default function Index() {
               comfort, and personalized treatment for all ages
             </p>
           </div>
-          <a
-            href="https://wa.me/+23408055450000?text=Hello,I W"
-            target="_blank"
-            className="btn"
-          >
-            Book consultation
-          </a>
+          <AppointmentLink />
         </div>
       </div>
       <div className="index__services">
@@ -159,6 +165,12 @@ export default function Index() {
               Your <b>smiles</b> are safe with us
             </h2>
           </div>
+        </div>
+      </div>
+      <div className="index__call-to-action">
+        <div className="banner">
+          <h2>Are you ready for the dental care your family deserves?</h2>
+          <AppointmentLink />
         </div>
       </div>
     </div>
