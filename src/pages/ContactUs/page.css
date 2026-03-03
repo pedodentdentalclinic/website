@@ -1,6 +1,6 @@
 .contact-us {
   display: flex;
-  padding: var(--padding-2);
+  padding: var(--padding-4);
   gap: var(--gap-3);
 
   & form {
@@ -32,7 +32,7 @@
     }
   }
 
-  & iframe{
+  & iframe {
     border-radius: var(--radius-1);
   }
 

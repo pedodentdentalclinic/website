@@ -37,7 +37,7 @@
     position: relative;
     z-index: 1;
 
-    padding-left: var(--padding-2);
+    padding-left: var(--padding-4);
 
     width: 40%;
   }
@@ -48,7 +48,7 @@
   flex-direction: column;
   gap: var(--gap-4);
 
-  padding: var(--padding-2);
+  padding: var(--padding-4);
 
   & .head {
     display: flex;
@@ -155,7 +155,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-5);
+  padding: var(--padding-4);
 
   & .banner {
     display: flex;
@@ -169,7 +169,7 @@
 
     background: linear-gradient(
       105.6deg,
-      #88B1DC -45.34%,
+      #88b1dc -45.34%,
       #fef9e2 51.56%,
       #b7e2f2 87.94%,
       #fef5e6 105.06%

@@ -14,7 +14,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  padding-inline: 4rem;
+  padding-inline: var(--padding-4);
 
   box-shadow: var(--shadow-1);
 
@@ -26,11 +26,23 @@ header {
     display: flex;
     gap: var(--gap-2);
 
-    & a {
+    & .dropdown {
+      display: flex;
+      gap: 0.25rem;
+
+      & .nf {
+        align-self: center;
+        font-size: 10px;
+      }
+    }
+
+    & a,
+    & .dropdown {
       transition: var(--transition-2);
     }
 
-    & a:hover {
+    & a:hover,
+    & .dropdown:hover {
       color: var(--clr-secondary-1);
       transition: var(--transition-2);
     }
