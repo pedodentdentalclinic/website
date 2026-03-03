@@ -1,0 +1,83 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+
+  & img {
+    max-width: 40rem;
+    border-radius: var(--radius-2);
+  }
+}
+
+.about-us > * {
+  padding: var(--padding-4);
+}
+
+.about-us .head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-1);
+  }
+
+  & .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & h1 {
+    font-size: var(--font-xxxl);
+
+    & span {
+      color: var(--clr-secondary-1);
+      /* text-decoration: underline; */
+    }
+  }
+}
+
+.about-us .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 80svh;
+
+  background-color: var(--clr-primary-2);
+  color: white;
+
+  & h2 {
+    text-align: center;
+    padding: var(--padding-4);
+  }
+}
+
+.about-us .mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--gap-2);
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-1);
+    & h2 {
+      font-size: var(--font-xxl);
+      & span {
+        color: var(--clr-secondary-1);
+        /* text-decoration: underline; */
+      }
+    }
+
+    & p {
+      font-size: var(--font-md);
+    }
+  }
+}

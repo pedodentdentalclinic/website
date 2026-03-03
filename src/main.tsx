@@ -8,6 +8,7 @@ import Footer from "./components/Footer/component";
 
 import Index from "./pages/Index/page";
 import NotFound from "./pages/NotFound/page";
+import AboutUs from "./pages/AboutUs/page";
 import ContactUs from "./pages/ContactUs/page";
 
 createRoot(document.getElementById("root")!).render(
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Index />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
