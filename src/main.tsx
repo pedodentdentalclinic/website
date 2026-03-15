@@ -10,16 +10,20 @@ import Index from "./pages/Index/page";
 import NotFound from "./pages/NotFound/page";
 import AboutUs from "./pages/AboutUs/page";
 import ContactUs from "./pages/ContactUs/page";
+import serviceHandler from "./pages/[service]/handler";
+import ScrollToTop from "./components/ScrollToTop/component";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Index />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        {serviceHandler()}
       </Routes>
       <Footer />
     </BrowserRouter>

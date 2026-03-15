@@ -1,0 +1,29 @@
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-3);
+
+  padding: var(--padding-4);
+  background-color: #fedfb9;
+
+  & h1 {
+    font-size: var(--font-xxl);
+  }
+
+  & .desc {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+
+  }
+}
+
+.service .img-container {
+  display: flex;
+  justify-content: center;
+
+  & img {
+    border-radius: var(--radius-2);
+    max-width: 35rem;
+  }
+}

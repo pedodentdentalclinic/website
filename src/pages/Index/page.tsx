@@ -3,18 +3,7 @@ import { Link } from "react-router";
 import "./page.css";
 
 import services from "./assets/services.jpg";
-
-function AppointmentLink() {
-  return (
-    <a
-      href="https://wa.me/+23408055450000?text=Hello, my name is [your name], I Would like to schedule a dental appointment"
-      target="_blank"
-      className="btn"
-    >
-      Schedule an Appointment
-    </a>
-  );
-}
+import { AppointmentLink } from "../../components/AppointmentLink/component";
 
 export default function Index() {
   return (
@@ -48,7 +37,7 @@ export default function Index() {
                 Protect your smile with our preventive services, ensuring
                 optimal oral health and early detection of potential issues
               </p>
-              <Link to="#" className="learn-more">
+              <Link to="/preventive-oral-services" className="learn-more">
                 Learn More <i className="nf nf-cod-arrow_right"></i>
               </Link>
             </div>
@@ -58,7 +47,7 @@ export default function Index() {
                 Transform your smile with our cosmetic dentistry solutions,
                 enhancing aesthetics and boosting your confidence.
               </p>
-              <Link to="#" className="learn-more">
+              <Link to="/cosmetic-dentistry" className="learn-more">
                 Learn More <i className="nf nf-cod-arrow_right"></i>
               </Link>
             </div>
@@ -68,7 +57,7 @@ export default function Index() {
                 Enhance your gum health with our periodontal services, focusing
                 on prevention, diagnosis, and treatment of gum diseases.{" "}
               </p>
-              <Link to="#" className="learn-more">
+              <Link to="/periodontology" className="learn-more">
                 Learn More <i className="nf nf-cod-arrow_right"></i>
               </Link>
             </div>
@@ -83,7 +72,7 @@ export default function Index() {
                 Achieve a straighter smile with our orthodontic treatments,
                 designed to improve alignment and oral health.
               </p>
-              <Link to="#" className="learn-more">
+              <Link to="/orthodontics" className="learn-more">
                 Learn More <i className="nf nf-cod-arrow_right"></i>
               </Link>
             </div>
@@ -93,7 +82,7 @@ export default function Index() {
                 Specialized care for young smiles, ensuring a positive dental
                 experience and healthy habits for a lifetime.
               </p>
-              <Link to="#" className="learn-more">
+              <Link to="/pediatric-dentistry" className="learn-more">
                 Learn More <i className="nf nf-cod-arrow_right"></i>
               </Link>
             </div>
@@ -104,7 +93,7 @@ export default function Index() {
                 effectively addressing root canal concerns and preserving oral
                 health.
               </p>
-              <Link to="#" className="learn-more">
+              <Link to="/endodontics" className="learn-more">
                 Learn More <i className="nf nf-cod-arrow_right"></i>
               </Link>
             </div>

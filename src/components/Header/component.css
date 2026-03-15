@@ -26,7 +26,7 @@ header {
     display: flex;
     gap: var(--gap-2);
 
-    & .dropdown {
+    & .drop-down-parent {
       display: flex;
       gap: 0.25rem;
 
@@ -37,15 +37,69 @@ header {
     }
 
     & a,
-    & .dropdown {
+    & .drop-down-parent {
       transition: var(--transition-2);
     }
 
     & a:hover,
-    & .dropdown:hover {
+    & .drop-down-parent:hover {
       color: var(--clr-secondary-1);
       transition: var(--transition-2);
     }
+  }
+
+  .nav__dropdown-container .drop-down {
+    display: none;
+    position: relative;
+  }
+
+  .nav__dropdown-container:focus,
+  .nav__dropdown-container:hover {
+    transition: var(--transition-1);
+  }
+  .nav__dropdown-container:focus .drop-down,
+  .nav__dropdown-container:hover .drop-down,
+  .nav__dropdown-container .drop-down-parent:focus + .drop-down {
+    display: block;
+    position: absolute;
+    top: 50%;
+  }
+
+  .drop-down__arrow {
+    align-self: center;
+    font-size: 10px;
+  }
+
+  .drop-down__sep {
+    height: 2rem;
+    background-color: transparent;
+  }
+
+  .drop-down__links {
+    border: solid 1px black;
+    background-color: white;
+    color: var(--font-color);
+    padding-block: 1.5rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 3rem;
+    display: grid;
+    gap: var(--gap-1);
+  }
+
+  .drop-down__link {
+    color: black;
+    list-style: none;
+    display: flex;
+    gap: var(--gap-1);
+    align-items: center;
+
+    & i {
+      font-size: var(--font-xs);
+    }
+  }
+  .drop-down__link:hover,
+  .drop-down__link:has(a:focus) {
+    transition: var(--transition-1);
   }
 }
 
