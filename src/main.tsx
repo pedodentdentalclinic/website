@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./app.css";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 
 import Header from "./components/Header/component";
 import Footer from "./components/Footer/component";
@@ -15,7 +15,7 @@ import ScrollToTop from "./components/ScrollToTop/component";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Header />
       <Routes>
@@ -26,6 +26,6 @@ createRoot(document.getElementById("root")!).render(
         {serviceHandler()}
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 );
